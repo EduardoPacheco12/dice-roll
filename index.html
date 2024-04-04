@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/dice.png">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Dice Roll</title>
+</head>
+<body>
+    <h1 class="title">Dice Roll</h1>
+    <div class="box">
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d4" title="dado-d4">
+            <img src="./assets/images/dados-d4.png" alt="dado-d4">
+        </a>
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d6" title="dado-d6">
+            <img src="./assets/images/dados-d6.png" alt="dado-d6" style="display: none;">
+        </a>
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d8" title="dado-d8">
+            <img src="./assets/images/dados-d8.png" alt="dado-d8" style="display: none;">
+        </a>
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d10" title="dado-d10">
+            <img src="./assets/images/dados-d10.png" alt="dado-d10" style="display: none;">
+        </a>
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d12" title="dado-d12">
+            <img src="./assets/images/dados-d12.png" alt="dado-d12" style="display: none;">
+        </a>
+        <a href="https://www.flaticon.com/br/icones-gratis/dados-d20" title="dado-d20">
+            <img src="./assets/images/dados-d20.png" alt="dado-d20" style="display: none;">
+        </a>
+        <div class="options">
+            <div class="option">
+                <label for="dice-number">Escolha o n° de dados:</label>
+                <select name="dice-number" id="dice-number">
+                    <option value="one-dice">1</option>
+                    <option value="two-dice">2</option>
+                    <option value="three-dice">3</option>
+                    <option value="four-dice">4</option>
+                    <option value="five-dice">5</option>
+                    <option value="six-dice">6</option>
+                </select>
+            </div>
+            <div class="option">
+                <label for="dice-type">Escolha o tipo de dado:</label>
+                <select name="dice-type" id="dice-type">
+                    <option value="d4">d4</option>
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                    <option value="d12">d12</option>
+                    <option value="d20">d20</option>
+                    <option value="d100">d100</option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
