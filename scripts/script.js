@@ -85,3 +85,44 @@ document.getElementById("dice-type").addEventListener("change", (value) => {
         });
     }
 });
+
+function roll() {
+    let selectedDiceNumber = Number(document.getElementById("dice-number").value);
+    let selectedDiceType = document.getElementById("dice-type").value;
+    let message = "";
+
+    for(let i = 0; i < selectedDiceNumber; i++) {
+        let randomNumber = Math.random();
+
+        if( selectedDiceType === "d4") {
+            let number = Math.floor(randomNumber * 4) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d6") {
+            let number = Math.floor(randomNumber * 6) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d8") {
+            let number = Math.floor(randomNumber * 8) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d10") {
+            let number = Math.floor(randomNumber * 10) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d12") {
+            let number = Math.floor(randomNumber * 12) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d20") {
+            let number = Math.floor(randomNumber * 20) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+        if( selectedDiceType === "d100") {
+            let number = Math.floor(randomNumber * 100) + 1;
+            message += `Valor do dado ${i + 1}: ${number}\n`;
+        }
+    }
+    alert(message);
+
+}
