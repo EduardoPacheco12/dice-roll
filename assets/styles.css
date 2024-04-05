@@ -3,8 +3,7 @@ body {
     background: linear-gradient(
         #7c1c0c,
         #c8792e
-    ) 0 100% no-repeat;
-    /* background-size: 100% 50%; */
+    ) no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,4 +52,12 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     border: 2px solid #cccccc;
     border-radius: 4px;
+}
+
+.roll-button {
+    width: 70px;
+    height: 40px;
+    align-self: center;
+    font-size: 22px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
